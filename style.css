@@ -1,0 +1,304 @@
+* , ::after,::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    width: 70%;
+    margin: 0 auto;
+}
+
+h3{
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    text-decoration: underline;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+
+button{
+    all: unset;
+}
+/* ================= Header Section =================== */
+
+.header{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.app-title{
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+.app-description{
+font-size: 1.2rem;
+text-transform:capitalize;
+font-weight: 100;
+}
+/* ================= Transaction Section =================== */
+.transactions-section{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+}
+
+.add-transaction ,.transaction-statistics{
+    width: 48%;
+    box-shadow:  0px 2px 5px rgba(0,0,0,0.15);
+    border-radius: 5px;
+    padding: 2.5rem 0.5rem;
+
+}
+
+.income-expense-choice{
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.income-expense-choice div{
+    display: flex;
+    gap: 0.5rem;
+    text-transform: capitalize;
+   
+}
+
+
+#income-radio{
+    accent-color: rgb(69, 253, 69);
+}
+#expense-radio{
+   
+    accent-color: rgb(255, 90, 90);
+
+}
+
+
+
+.error-message , .input-error-text{
+    color:red;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 500;
+    padding: 0.5em;
+    background-color: rgb(255, 187, 187);
+    border-radius: 2px;
+}
+.error-message{
+    display: block;
+}
+
+
+.input-area{
+    position: relative;
+    margin-bottom: 0.2rem;
+    margin-top: 1rem;
+    border-radius: 5px;
+}
+input{
+    display: block;
+    width: 100%;
+    padding: 8px 5px;
+    border: rgb(197, 197, 197) solid 1px;
+    border-radius: 5px;
+    
+}
+
+input:invalid:focus{
+    outline: none;
+}
+.error-icon{
+    position: absolute;
+    top: 50%;
+    right:10px;
+    transform: translateY(-50%);
+    color: red;
+}
+
+
+.input-area-error{
+    border: solid 1px rgb(255, 76, 76);
+    margin-bottom: 0.6rem;
+}
+
+
+
+
+
+.input-error-text{
+    text-align: start;
+}
+
+
+.error{
+    display: none;
+}
+
+
+#addBtn{
+    all: unset;
+    background-color: rgb(51, 128, 253);
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    padding: 0.4em 0;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 1.6rem;
+    cursor: pointer;
+}
+
+
+.transaction-statistics div{
+    /* border:  solid red 2px; */
+    font-size: 1rem;
+    padding: 0.7em ;
+    text-align: center;
+    text-transform: capitalize;
+    box-shadow: 2px 2px 5px 2px  rgba(0,0,0,0.1);
+}
+.transaction-statistics div + div{
+    margin-top: 0.75rem;
+}
+.balance{
+border-right-color:  rgb(255, 194, 82);
+border-right-style: solid;
+border-right-width: 10px;
+}
+.income{
+    border-right-color:  rgb(69, 253, 69);
+    border-right-style: solid;
+    border-right-width: 10px;
+
+}
+.expense{
+    border-right-color:  rgb(255, 90, 90);
+border-right-style: solid;
+border-right-width: 10px;
+}
+
+/* ================= Transaction History Section =================== */
+
+
+
+button{
+    all: unset;
+    cursor: pointer;
+}
+
+.transaction-history{
+    margin-top: 4rem;
+    text-align: center;
+    padding: 0.7rem;
+
+    box-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+
+}
+
+.transaction-history-content{
+    /* border: solid 5px yellow; */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.income-section , .expense-section{
+    width: 49%;
+}
+
+
+
+
+
+ .transaction-component{
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0.7rem 0.5rem;
+    box-shadow: 1px 1px 10px rgba(0,0,0,0.2);
+    margin-bottom: 0.8rem;
+    
+ }
+
+.income-trans{
+    border-left-color:  rgb(69, 253, 69);
+    border-left-style: solid;
+    border-left-width: 10px;
+}
+
+.expense-trans{
+    border-left-color:  rgb(255, 90, 90);
+    border-left-style: solid;
+    border-left-width: 10px;
+}
+
+ .transaction-component-left{
+
+    text-align: start;
+ }
+
+ .transaction-component-right{
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+ }
+
+ .fa-trash-can{
+    font-size: 1rem;
+ }
+
+
+ .transaction-component-right p{
+    margin-top: 5px;
+ }
+
+
+ .transaction-source{
+margin-bottom: 5px;
+ }
+
+ 
+ .transaction-date{
+    font-size: 0.85rem;
+    color: rgb(115, 115, 115);
+ }
+
+
+
+
+
+ @media (max-width:840px) {
+
+    .transactions-section{
+        flex-direction: column;
+
+    }
+
+    .add-transaction,.transaction-statistics{
+        width: 100%;
+    }
+
+    
+
+
+    .transaction-history-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .income-section,.expense-section{
+        width: 100%;
+    }
+    
+ }
